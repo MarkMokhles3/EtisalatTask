@@ -246,6 +246,7 @@
 			children = (
 				086365FB2981C88400378EF9 /* NewEtisalatTaskTests.swift */,
 				086366022981CB0300378EF9 /* Mocks */,
+				086366052981CBC900378EF9 /* MockError */,
 			);
 			path = NewEtisalatTaskTests;
 			sourceTree = "<group>";
@@ -272,7 +273,6 @@
 			children = (
 				08B471E12981224B00835F96 /* NewEtisalatTask */,
 				086365FA2981C88400378EF9 /* NewEtisalatTaskTests */,
-				086366052981CBC900378EF9 /* MockError */,
 				08B471E02981224B00835F96 /* Products */,
 			);
 			sourceTree = "<group>";
