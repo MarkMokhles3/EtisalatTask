@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol CharactersAPIServiceProtocol {
+    func getRepositories(query: String, offset: Int, completion: @escaping(Result<APIResult,Error>) -> Void)
+}

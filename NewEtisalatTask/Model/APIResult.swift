@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+// MARK: - APIResult
+
+struct APIResult: Codable {
+    var data: APIChracterData?
+}
+
+// MARK: - APIChracterData
+
+struct APIChracterData: Codable {
+    var total: Int?
+    var count: Int?
+    var results: [Character]
+}
