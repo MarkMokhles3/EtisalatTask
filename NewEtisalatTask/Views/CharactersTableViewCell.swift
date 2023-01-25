@@ -43,20 +43,9 @@ class CharactersTableViewCell: UITableViewCell {
         }
 
         //ImageURL
-        let url =  getImageURL(from: character)
+        let url =  character.thumbnail?.getURL(for: .small)
         guard let imageURL = url else { return }
         imgCharacter.load(urlString: imageURL)
-    }
-
-    // MARK: - Get ImageURL
-
-    func getImageURL(from character: Character) -> String? {
-
-        let thumbnailpath = character.thumbnail?.path ?? ""
-        let thumbnailExtension = character.thumbnail?.thumbnailExtension ?? ""
-        let imageURL = "\(thumbnailpath)/portrait_medium.\(thumbnailExtension)"
-        
-        return imageURL
     }
 
     // MARK: - SetupView

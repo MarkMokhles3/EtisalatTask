@@ -9,6 +9,7 @@ import UIKit
 
 protocol CharactersRouterProtocol {
     func getRootViewController() -> UINavigationController
+    func routeToDetails(character: Character) 
 }
 
 

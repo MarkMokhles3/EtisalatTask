@@ -27,6 +27,10 @@ class CharactersViewController: UIViewController {
     private var viewModel: CharactersViewModelProtocol
     private var searchController = UISearchController()
 
+    // MARK: - iConstant
+
+    let activityView = UIActivityIndicatorView(style: .large)
+
     // MARK: View Life Cycle
 
     override func viewDidLoad() {
@@ -39,10 +43,12 @@ class CharactersViewController: UIViewController {
         viewModel.onDataUpdate = {
             DispatchQueue.main.async { [weak self] in
                 self?.characterTableView.reloadData()
+                self?.activityView.stopAnimating()
             }
         }
         setupSearchBar()
         configureTableView()
+        showActivityIndicatory()
     }
 
     // MARK: - Configure TableView
@@ -59,6 +65,14 @@ class CharactersViewController: UIViewController {
         searchController.searchBar.placeholder = "Find your Hero"
         searchController.obscuresBackgroundDuringPresentation = false
         navigationController?.navigationBar.prefersLargeTitles = true
+    }
+
+    // MARK: - showActivityIndicatory
+
+    func showActivityIndicatory() {
+        activityView.center = self.view.center
+        self.view.addSubview(activityView)
+        activityView.startAnimating()
     }
 }
 
@@ -80,7 +94,7 @@ extension CharactersViewController: UITableViewDataSource {
     }
 }
 
-//MARK: - TableView Delegate
+// MARK: - TableView Delegate
 
 extension CharactersViewController: UITableViewDelegate {
 
@@ -90,6 +104,7 @@ extension CharactersViewController: UITableViewDelegate {
     }
 }
 
+// MARK: - SearchBar Delegate
 extension CharactersViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange textSearched: String) {
         viewModel.searchFor(query: textSearched)

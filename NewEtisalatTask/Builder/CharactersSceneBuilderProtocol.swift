@@ -9,4 +9,5 @@ import UIKit
 
 protocol CharactersSceneBuilderProtocol {
     func getCharactersViewController(router: CharactersRouterProtocol) -> UIViewController
+    func getCharactersDetailsViewController(character: Character) -> UIViewController
 }

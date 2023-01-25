@@ -63,7 +63,7 @@ class CharactersViewModel: CharactersViewModelProtocol {
     }
 
     func onSelect(index: Int) {
-        
+        router.routeToDetails(character: characters[index])
     }
 
     func searchFor(query: String) {

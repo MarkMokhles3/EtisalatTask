@@ -26,6 +26,10 @@
 		086365DD2981620E00378EF9 /* CharactersSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086365DC2981620E00378EF9 /* CharactersSceneBuilder.swift */; };
 		086365DF2981627D00378EF9 /* CharactersRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086365DE2981627D00378EF9 /* CharactersRouterProtocol.swift */; };
 		086365E22981629800378EF9 /* CharactersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086365E12981629800378EF9 /* CharactersRouter.swift */; };
+		086365EE2981A15300378EF9 /* CharactersDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086365EC2981A15300378EF9 /* CharactersDetailsViewController.swift */; };
+		086365EF2981A15300378EF9 /* CharactersDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 086365ED2981A15300378EF9 /* CharactersDetailsViewController.xib */; };
+		086365F22981A1AF00378EF9 /* CharactersDetailsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086365F12981A1AF00378EF9 /* CharactersDetailsViewModelProtocol.swift */; };
+		086365F42981A1BD00378EF9 /* CharactersDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086365F32981A1BD00378EF9 /* CharactersDetailsViewModel.swift */; };
 		08B471E32981224B00835F96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B471E22981224B00835F96 /* AppDelegate.swift */; };
 		08B471E52981224B00835F96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B471E42981224B00835F96 /* SceneDelegate.swift */; };
 		08B471EA2981224B00835F96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B471E82981224B00835F96 /* Main.storyboard */; };
@@ -53,6 +57,10 @@
 		086365DC2981620E00378EF9 /* CharactersSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersSceneBuilder.swift; sourceTree = "<group>"; };
 		086365DE2981627D00378EF9 /* CharactersRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersRouterProtocol.swift; sourceTree = "<group>"; };
 		086365E12981629800378EF9 /* CharactersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersRouter.swift; sourceTree = "<group>"; };
+		086365EC2981A15300378EF9 /* CharactersDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersDetailsViewController.swift; sourceTree = "<group>"; };
+		086365ED2981A15300378EF9 /* CharactersDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharactersDetailsViewController.xib; sourceTree = "<group>"; };
+		086365F12981A1AF00378EF9 /* CharactersDetailsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersDetailsViewModelProtocol.swift; sourceTree = "<group>"; };
+		086365F32981A1BD00378EF9 /* CharactersDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersDetailsViewModel.swift; sourceTree = "<group>"; };
 		08B471DF2981224B00835F96 /* NewEtisalatTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewEtisalatTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B471E22981224B00835F96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08B471E42981224B00835F96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				086365C029814FA300378EF9 /* CharactersViewController */,
+				086365EB2981A13100378EF9 /* CharactersDetailsViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -155,6 +164,7 @@
 		086365D229815C1100378EF9 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				086365F02981A19100378EF9 /* CharactersDetailsViewModel */,
 				086365D529815C7B00378EF9 /* CharactersViewModel */,
 			);
 			path = ViewModels;
@@ -185,6 +195,24 @@
 				086365DC2981620E00378EF9 /* CharactersSceneBuilder.swift */,
 			);
 			path = Builder;
+			sourceTree = "<group>";
+		};
+		086365EB2981A13100378EF9 /* CharactersDetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				086365EC2981A15300378EF9 /* CharactersDetailsViewController.swift */,
+				086365ED2981A15300378EF9 /* CharactersDetailsViewController.xib */,
+			);
+			path = CharactersDetailsViewController;
+			sourceTree = "<group>";
+		};
+		086365F02981A19100378EF9 /* CharactersDetailsViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				086365F12981A1AF00378EF9 /* CharactersDetailsViewModelProtocol.swift */,
+				086365F32981A1BD00378EF9 /* CharactersDetailsViewModel.swift */,
+			);
+			path = CharactersDetailsViewModel;
 			sourceTree = "<group>";
 		};
 		08B471D62981224B00835F96 = {
@@ -286,6 +314,7 @@
 				086365C62981500300378EF9 /* CharactersViewController.xib in Resources */,
 				08B471EF2981224D00835F96 /* LaunchScreen.storyboard in Resources */,
 				08B471EC2981224D00835F96 /* Assets.xcassets in Resources */,
+				086365EF2981A15300378EF9 /* CharactersDetailsViewController.xib in Resources */,
 				08B471EA2981224B00835F96 /* Main.storyboard in Resources */,
 				086365CB2981505E00378EF9 /* CharactersTableViewCell.xib in Resources */,
 			);
@@ -298,7 +327,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				086365F22981A1AF00378EF9 /* CharactersDetailsViewModelProtocol.swift in Sources */,
 				086365B3298131E900378EF9 /* CharacteresAPIService.swift in Sources */,
+				086365F42981A1BD00378EF9 /* CharactersDetailsViewModel.swift in Sources */,
 				086365CE298150E100378EF9 /* UIImageView+Extension.swift in Sources */,
 				086365DD2981620E00378EF9 /* CharactersSceneBuilder.swift in Sources */,
 				086365BF2981408100378EF9 /* Credentials.swift in Sources */,
@@ -307,6 +338,7 @@
 				086365DF2981627D00378EF9 /* CharactersRouterProtocol.swift in Sources */,
 				08B471E32981224B00835F96 /* AppDelegate.swift in Sources */,
 				086365DB29815FF400378EF9 /* CharactersSceneBuilderProtocol.swift in Sources */,
+				086365EE2981A15300378EF9 /* CharactersDetailsViewController.swift in Sources */,
 				086365B0298131AA00378EF9 /* APIServices.swift in Sources */,
 				086365D02981510A00378EF9 /* UIView+Extension.swift in Sources */,
 				086365D429815C4000378EF9 /* CharactersViewModel.swift in Sources */,
