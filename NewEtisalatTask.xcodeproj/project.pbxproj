@@ -30,12 +30,26 @@
 		086365EF2981A15300378EF9 /* CharactersDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 086365ED2981A15300378EF9 /* CharactersDetailsViewController.xib */; };
 		086365F22981A1AF00378EF9 /* CharactersDetailsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086365F12981A1AF00378EF9 /* CharactersDetailsViewModelProtocol.swift */; };
 		086365F42981A1BD00378EF9 /* CharactersDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086365F32981A1BD00378EF9 /* CharactersDetailsViewModel.swift */; };
+		086365FC2981C88400378EF9 /* NewEtisalatTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086365FB2981C88400378EF9 /* NewEtisalatTaskTests.swift */; };
+		086366042981CB2A00378EF9 /* CharactersAPIServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086366032981CB2A00378EF9 /* CharactersAPIServiceMock.swift */; };
+		086366072981CBDE00378EF9 /* MockError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086366062981CBDE00378EF9 /* MockError.swift */; };
+		086366092981CD5500378EF9 /* RouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086366082981CD5500378EF9 /* RouterMock.swift */; };
 		08B471E32981224B00835F96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B471E22981224B00835F96 /* AppDelegate.swift */; };
 		08B471E52981224B00835F96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B471E42981224B00835F96 /* SceneDelegate.swift */; };
 		08B471EA2981224B00835F96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B471E82981224B00835F96 /* Main.storyboard */; };
 		08B471EC2981224D00835F96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B471EB2981224D00835F96 /* Assets.xcassets */; };
 		08B471EF2981224D00835F96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B471ED2981224D00835F96 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		086365FD2981C88400378EF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08B471D72981224B00835F96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08B471DE2981224B00835F96;
+			remoteInfo = NewEtisalatTask;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		086365AF298131AA00378EF9 /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
@@ -61,6 +75,11 @@
 		086365ED2981A15300378EF9 /* CharactersDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharactersDetailsViewController.xib; sourceTree = "<group>"; };
 		086365F12981A1AF00378EF9 /* CharactersDetailsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersDetailsViewModelProtocol.swift; sourceTree = "<group>"; };
 		086365F32981A1BD00378EF9 /* CharactersDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersDetailsViewModel.swift; sourceTree = "<group>"; };
+		086365F92981C88400378EF9 /* NewEtisalatTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewEtisalatTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		086365FB2981C88400378EF9 /* NewEtisalatTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEtisalatTaskTests.swift; sourceTree = "<group>"; };
+		086366032981CB2A00378EF9 /* CharactersAPIServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersAPIServiceMock.swift; sourceTree = "<group>"; };
+		086366062981CBDE00378EF9 /* MockError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockError.swift; sourceTree = "<group>"; };
+		086366082981CD5500378EF9 /* RouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterMock.swift; sourceTree = "<group>"; };
 		08B471DF2981224B00835F96 /* NewEtisalatTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewEtisalatTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B471E22981224B00835F96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08B471E42981224B00835F96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +90,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		086365F62981C88400378EF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		08B471DC2981224B00835F96 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,10 +241,38 @@
 			path = CharactersDetailsViewModel;
 			sourceTree = "<group>";
 		};
+		086365FA2981C88400378EF9 /* NewEtisalatTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				086365FB2981C88400378EF9 /* NewEtisalatTaskTests.swift */,
+				086366022981CB0300378EF9 /* Mocks */,
+			);
+			path = NewEtisalatTaskTests;
+			sourceTree = "<group>";
+		};
+		086366022981CB0300378EF9 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				086366032981CB2A00378EF9 /* CharactersAPIServiceMock.swift */,
+				086366082981CD5500378EF9 /* RouterMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		086366052981CBC900378EF9 /* MockError */ = {
+			isa = PBXGroup;
+			children = (
+				086366062981CBDE00378EF9 /* MockError.swift */,
+			);
+			path = MockError;
+			sourceTree = "<group>";
+		};
 		08B471D62981224B00835F96 = {
 			isa = PBXGroup;
 			children = (
 				08B471E12981224B00835F96 /* NewEtisalatTask */,
+				086365FA2981C88400378EF9 /* NewEtisalatTaskTests */,
+				086366052981CBC900378EF9 /* MockError */,
 				08B471E02981224B00835F96 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -227,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				08B471DF2981224B00835F96 /* NewEtisalatTask.app */,
+				086365F92981C88400378EF9 /* NewEtisalatTaskTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -256,6 +311,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		086365F82981C88400378EF9 /* NewEtisalatTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 086366012981C88400378EF9 /* Build configuration list for PBXNativeTarget "NewEtisalatTaskTests" */;
+			buildPhases = (
+				086365F52981C88400378EF9 /* Sources */,
+				086365F62981C88400378EF9 /* Frameworks */,
+				086365F72981C88400378EF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				086365FE2981C88400378EF9 /* PBXTargetDependency */,
+			);
+			name = NewEtisalatTaskTests;
+			productName = NewEtisalatTaskTests;
+			productReference = 086365F92981C88400378EF9 /* NewEtisalatTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		08B471DE2981224B00835F96 /* NewEtisalatTask */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08B471F32981224D00835F96 /* Build configuration list for PBXNativeTarget "NewEtisalatTask" */;
@@ -283,6 +356,10 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					086365F82981C88400378EF9 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 08B471DE2981224B00835F96;
+					};
 					08B471DE2981224B00835F96 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -302,11 +379,19 @@
 			projectRoot = "";
 			targets = (
 				08B471DE2981224B00835F96 /* NewEtisalatTask */,
+				086365F82981C88400378EF9 /* NewEtisalatTaskTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		086365F72981C88400378EF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		08B471DD2981224B00835F96 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -323,6 +408,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		086365F52981C88400378EF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				086366042981CB2A00378EF9 /* CharactersAPIServiceMock.swift in Sources */,
+				086366072981CBDE00378EF9 /* MockError.swift in Sources */,
+				086366092981CD5500378EF9 /* RouterMock.swift in Sources */,
+				086365FC2981C88400378EF9 /* NewEtisalatTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		08B471DB2981224B00835F96 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -354,6 +450,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		086365FE2981C88400378EF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08B471DE2981224B00835F96 /* NewEtisalatTask */;
+			targetProxy = 086365FD2981C88400378EF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		08B471E82981224B00835F96 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -374,6 +478,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		086365FF2981C88400378EF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58S3B75CL7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Etisalat.NewEtisalatTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewEtisalatTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NewEtisalatTask";
+			};
+			name = Debug;
+		};
+		086366002981C88400378EF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58S3B75CL7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Etisalat.NewEtisalatTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewEtisalatTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NewEtisalatTask";
+			};
+			name = Release;
+		};
 		08B471F12981224D00835F96 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -547,6 +687,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		086366012981C88400378EF9 /* Build configuration list for PBXNativeTarget "NewEtisalatTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				086365FF2981C88400378EF9 /* Debug */,
+				086366002981C88400378EF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		08B471DA2981224B00835F96 /* Build configuration list for PBXProject "NewEtisalatTask" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

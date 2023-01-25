@@ -10,11 +10,9 @@ import Foundation
 // MARK: - Character
 
 struct Character: Codable {
-    var id: Int?
+    
     var name, description: String?
     var thumbnail: Thumbnail?
-//    var urls: [URLElement]? // [[String:String]]
-
 }
 
 

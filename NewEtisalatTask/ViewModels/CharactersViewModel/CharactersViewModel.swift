@@ -39,7 +39,7 @@ class CharactersViewModel: CharactersViewModelProtocol {
 
         isFetching = true
 
-        dataSource.getRepositories(query: query, offset: charactersCount) { [weak self] result in
+        dataSource.getCharacters(query: query, offset: charactersCount) { [weak self] result in
 
             switch result {
             case .success(let characters):

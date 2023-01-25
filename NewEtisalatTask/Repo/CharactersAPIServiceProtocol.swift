@@ -8,5 +8,5 @@
 import Foundation
 
 protocol CharactersAPIServiceProtocol {
-    func getRepositories(query: String?, offset: Int, completion: @escaping(Result<APIResult,Error>) -> Void)
+    func getCharacters(query: String?, offset: Int, completion: @escaping(Result<APIResult,Error>) -> Void)
 }

@@ -10,7 +10,7 @@ import CryptoKit
 
 class CharactersAPIService: CharactersAPIServiceProtocol {
 
-    func getRepositories(query: String?, offset: Int, completion: @escaping(Result<APIResult,Error>) -> Void) {
+    func getCharacters(query: String?, offset: Int, completion: @escaping(Result<APIResult,Error>) -> Void) {
 
         let ts = String(Date().timeIntervalSince1970)
         let hash = MD5(data: "\(ts)\(privateKey)\(publicKey)")

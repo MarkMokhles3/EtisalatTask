@@ -16,7 +16,5 @@ struct APIResult: Codable {
 // MARK: - APIChracterData
 
 struct APIChracterData: Codable {
-    var total: Int?
-    var count: Int?
     var results: [Character]
 }

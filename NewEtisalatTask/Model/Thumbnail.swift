@@ -11,18 +11,24 @@ import Foundation
 
 struct Thumbnail: Codable {
 
+    // MARK: - iVars
+
+    var path: String?
+    var thumbnailExtension: String?
+
+    // MARK: - Enums
+
     enum Size: String {
         case small = "portrait_medium"
         case large = "landscape_incredible"
     }
 
-    var path: String?
-    var thumbnailExtension: String?
-
     enum CodingKeys: String, CodingKey {
         case path
         case thumbnailExtension = "extension"
     }
+    
+    // MARK: - iFunc
 
     func getURL(for size: Size) -> String {
 
@@ -33,16 +39,3 @@ struct Thumbnail: Codable {
         return imageURL
     }
 }
-
-//// MARK: - URLElement
-//
-//struct URLElement: Codable {
-//    var type: URLType?
-//    var url: String?
-//}
-//
-//enum URLType: String, Codable {
-//    case comiclink = "comiclink"
-//    case detail = "detail"
-//    case wiki = "wiki"
-//}
