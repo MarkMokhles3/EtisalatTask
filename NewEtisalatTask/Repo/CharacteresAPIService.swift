@@ -10,7 +10,7 @@ import CryptoKit
 
 class CharactersAPIService: CharactersAPIServiceProtocol {
 
-    func getRepositories(query: String, offset: Int, completion: @escaping(Result<APIResult,Error>) -> Void) {
+    func getRepositories(query: String?, offset: Int, completion: @escaping(Result<APIResult,Error>) -> Void) {
 
         let ts = String(Date().timeIntervalSince1970)
         let hash = MD5(data: "\(ts)\(privateKey)\(publicKey)")
@@ -27,13 +27,15 @@ class CharactersAPIService: CharactersAPIServiceProtocol {
                URLQueryItem(name: "offset", value: "\(offset)")
            ]
 
-        if !query.isEmpty {
+        if let query, !query.isEmpty {
             components.queryItems?.append(URLQueryItem(name: "nameStartsWith", value: query))
         }
         let url = components.url?.absoluteString ?? ""
 
         APIService.sharedService.request(url: url, completion: completion)
     }
+
+    // MARK: - Cryption
 
     func MD5(data: String) -> String {
 
